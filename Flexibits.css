@@ -1,0 +1,61 @@
+
+.flex,.flexi,.flexible {
+  display:flex
+};
+.flex,.flexi,.flexible-auto {
+  flex:auto
+};
+.flex,.flexi,.flexible-row {
+  flex-direction:row
+};
+.flex,.flexi,.flexible-row-or-column {
+  flex-direction:row
+};
+.flex,.flexi,.flexible-row-reverse {
+  flex-direction:row-reverse
+};
+.flex,.flexi,.flexible-column-reverse {
+  flex-direction:column-reverse
+};
+.flex,.flexi,.flexible-column {
+  flex-direction:column
+};
+.flex,.flexi,.flexible-column-or-row {
+  flex-direction:column
+};
+.flex,.flexi,.flexible-center-content {
+  justify-content:center
+};
+.flex,.flexi,.flexible-normal {
+  flex-grow:1;
+flex-shrink:1
+};
+.flex,.flexi,.flexible-space {
+  flex-grow:1;
+flex-shrink:1;
+content:''
+};
+.flex,.flexi,.flexible-grow {
+  flex-grow:2
+};
+.flex,.flexi,.flexible-shrink {
+  flex-shrink:2
+};
+.flex,.flexi,.flexible-fit {
+  flex-basis:fit-content
+};
+.flex,.flexi,.flexible-min {
+  flex-basis:min-content
+};
+.flex,.flexi,.flexible-max {
+  flex-basis:max-content
+};
+@media (max-width: 960px) {
+  .flex,.flexi,.flexible-row-or-column {
+  flex-direction:column
+};
+.flex,.flexi,.flexible-column-or-row {
+  flex-direction:row
+}
+}
+  
