@@ -3,21 +3,21 @@ param([string[]]$cssClassBase = @(".flex",".flexi",".flexible"))
 
 [Ordered]@{
     "$($cssClassBase -join ',')" = @{'display'='flex'}
-    "$($cssClassBase -join ',')-auto" = @{'flex'='auto'}
-    "$($cssClassBase -join ',')-row" = @{'flex-direction'='row'}
-    "$($cssClassBase -join ',')-row-or-column" = @{'flex-direction'='row'}
-    "$($cssClassBase -join ',')-row-reverse" = @{'flex-direction'='row-reverse'}
-    "$($cssClassBase -join ',')-column-reverse" = @{'flex-direction'='column-reverse'}
-    "$($cssClassBase -join ',')-column" = @{'flex-direction'='column'}
-    "$($cssClassBase -join ',')-column-or-row" = @{'flex-direction'='column'}
-    "$($cssClassBase -join ',')-center-content" = @{'justify-content'='center'}
-    "$($cssClassBase -join ',')-normal" = @{'flex-grow'=1;'flex-shrink'=1}
-    "$($cssClassBase -join ',')-space" = @{'flex-grow'=1;'flex-shrink'=1;content=''}    
-    "$($cssClassBase -join ',')-grow" = @{'flex-grow'=2}
-    "$($cssClassBase -join ',')-shrink" = @{'flex-shrink'=2}    
-    "$($cssClassBase -join ',')-fit" = @{'flex-basis'="fit-content"}    
-    "$($cssClassBase -join ',')-min" = @{'flex-basis'="min-content"}    
-    "$($cssClassBase -join ',')-max" = @{'flex-basis'="max-content"}
+    "$($cssClassBase -join '-auto,')-auto" = @{'flex'='auto'}
+    "$($cssClassBase -join '-row,')-row" = @{'flex-direction'='row'}
+    "$($cssClassBase -join '-row-or-column,')-row-or-column" = @{'flex-direction'='row'}
+    "$($cssClassBase -join '-row-reverse,')-row-reverse" = @{'flex-direction'='row-reverse'}
+    "$($cssClassBase -join '-column-reverse,')-column-reverse" = @{'flex-direction'='column-reverse'}
+    "$($cssClassBase -join '-column,')-column" = @{'flex-direction'='column'}
+    "$($cssClassBase -join '-column-or-row,')-column-or-row" = @{'flex-direction'='column'}
+    "$($cssClassBase -join '-center-content,')-center-content" = @{'justify-content'='center'}
+    "$($cssClassBase -join '-normal,')-normal" = @{'flex-grow'=1;'flex-shrink'=1}
+    "$($cssClassBase -join '-space,')-space" = @{'flex-grow'=1;'flex-shrink'=1;content=''}    
+    "$($cssClassBase -join '-grow,')-grow" = @{'flex-grow'=2}
+    "$($cssClassBase -join '-shrink,')-shrink" = @{'flex-shrink'=2}    
+    "$($cssClassBase -join '-fit,')-fit" = @{'flex-basis'="fit-content"}    
+    "$($cssClassBase -join '-min,')-min" = @{'flex-basis'="min-content"}    
+    "$($cssClassBase -join '-max,')-max" = @{'flex-basis'="max-content"}
     "@media (max-width: 960px)" = @{    
         "$($cssClassBase -join ',')-column-or-row" = @{
             "flex-direction"="row"
