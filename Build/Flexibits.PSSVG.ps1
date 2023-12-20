@@ -1,4 +1,4 @@
-"Debugging Build Problems with Logo, Part 1" | Out-Host
+$ErrorActionPreference = 'continue'
 
 $assetsPath = $PSScriptRoot | Split-Path | Join-Path -ChildPath "Assets"
 
@@ -39,5 +39,6 @@ svg -ViewBox 400,400 @(
 ) -OutputPath (Join-Path $assetsPath "Flexibits.svg")
 
 
+"Debugging Build Problems with Logo, Part 4" | Out-Host
 
 
