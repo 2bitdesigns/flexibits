@@ -56,6 +56,16 @@ param([string[]]$cssClassBase = @(".flex",".flexi",".flexible"))
     "$($cssClassBase -join '-max,')-max" = @{'flex-basis'="max-content"}
 }
 @{
+    "$($cssClassBase -join '-no-wrap,')-no-wrap" = @{'flex-wrap'="nowrap"}
+}
+@{
+    "$($cssClassBase -join '-reverse-wrap,')-reverse-wrap" = @{'flex-wrap'="wrap-reverse"}
+}
+@{
+    "$($cssClassBase -join '-wrap,')-wrap" = @{'flex-wrap'="wrap"}
+}
+
+@{
     "@media (max-width: 960px)" = @{    
         "$($cssClassBase -join '-column-or-row,')-column-or-row" = @{
             "flex-direction"="row"
