@@ -74,12 +74,24 @@ content:''
   flex-basis:max-content
 }
    
+.flex-no-wrap,.flexi-no-wrap,.flexible-no-wrap {
+  flex-wrap:nowrap
+}
+   
+.flex-reverse-wrap,.flexi-reverse-wrap,.flexible-reverse-wrap {
+  flex-wrap:wrap-reverse
+}
+   
+.flex-wrap,.flexi-wrap,.flexible-wrap {
+  flex-wrap:wrap
+}
+   
 @media (max-width: 960px) {
-  .flex-column-or-row,.flexi-column-or-row,.flexible-column-or-row {
-  flex-direction:row
-};
-.flex-row-or-column,.flexi-row-or-column,.flexible-row-or-column {
+  .flex-row-or-column,.flexi-row-or-column,.flexible-row-or-column {
   flex-direction:column
+};
+.flex-column-or-row,.flexi-column-or-row,.flexible-column-or-row {
+  flex-direction:row
 }
 }
    
