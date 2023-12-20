@@ -1,10 +1,12 @@
-#requires -Module PSSVG
+"Debugging Build Problems with Logo, Part 1" | Out-Host
 
 $assetsPath = $PSScriptRoot | Split-Path | Join-Path -ChildPath "Assets"
 
 if (-not (Test-Path $assetsPath)) {
     $null = New-Item -ItemType Directory -Force $assetsPath 
 }
+
+"Debugging Build Problems with Logo, Part 2" | Out-Host
 
 $innerCircles = @(
     $xPercent = 48..52
@@ -22,6 +24,8 @@ $innerCircles = @(
         svg.circle -Class "ansi$($n+1)-fill" -Fill '#4488ff' -Cx "$x%" -Cy "$y%" -R 0.5%
     }
 )
+
+"Debugging Build Problems with Logo, Part 3" | Out-Host
 
 svg -ViewBox 400,400 @(
     svg.defs @(
