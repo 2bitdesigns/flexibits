@@ -1,5 +1,3 @@
-#requires -Module PSSVG
-
 $assetsPath = $PSScriptRoot | Split-Path | Join-Path -ChildPath "Assets"
 
 if (-not (Test-Path $assetsPath)) {
@@ -23,6 +21,12 @@ $innerCircles = @(
     }
 )
 
+$fontSettings = [Ordered]@{
+    TextAnchor        = 'middle'
+    AlignmentBaseline = 'middle'
+    Style             = "font-family: 'Abel';"        
+}
+
 svg -ViewBox 400,400 @(
     svg.defs @(
         SVG.GoogleFont -FontName Abel
@@ -33,7 +37,5 @@ svg -ViewBox 400,400 @(
     $innerCircles
     # svg.text -FontSize 28 -Content 'bits' -X 50% -Y 55% @fontSettings -Class foreground-fill -Fill '#4488ff'
 ) -OutputPath (Join-Path $assetsPath "Flexibits.svg")
-
-
 
 

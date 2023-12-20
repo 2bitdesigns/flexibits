@@ -44,8 +44,8 @@
 }
    
 .flex-normal,.flexi-normal,.flexible-normal {
-  flex-shrink:1;
-flex-grow:1
+  flex-grow:1;
+flex-shrink:1
 }
    
 .flex-space,.flexi-space,.flexible-space {
