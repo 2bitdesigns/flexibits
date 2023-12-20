@@ -49,9 +49,9 @@ flex-grow:1
 }
    
 .flex-space,.flexi-space,.flexible-space {
-  flex-shrink:1;
+  content:'';
 flex-grow:1;
-content:''
+flex-shrink:1
 }
    
 .flex-grow,.flexi-grow,.flexible-grow {

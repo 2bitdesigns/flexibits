@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generated with PSSVG 0.2.10 <https://github.com/StartAutomating/PSSVG> -->
+<svg viewBox="0 0 400 400" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style type="text/css">@import url('https://fonts.googleapis.com/css?family=Abel')</style>
+  </defs>
+  <ellipse stroke-width="1.25" fill="transparent" cx="50%" cy="50%" stroke="#4488ff" ry="75" rx="50" class="foreground-stroke" />
+  <circle class="ansi1-fill" fill="#4488ff" cx="50%" cy="53.5%" r="0.5%" />
+  <circle class="ansi2-fill" fill="#4488ff" cx="54%" cy="53.309016994375%" r="0.5%" />
+  <circle class="ansi3-fill" fill="#4488ff" cx="46%" cy="52.809016994375%" r="0.5%" />
+  <circle class="ansi4-fill" fill="#4488ff" cx="58%" cy="52.190983005625%" r="0.5%" />
+  <circle class="ansi5-fill" fill="#4488ff" cx="42%" cy="51.690983005625%" r="0.5%" />
+</svg>
