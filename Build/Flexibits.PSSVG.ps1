@@ -1,12 +1,8 @@
-$ErrorActionPreference = 'continue'
-
 $assetsPath = $PSScriptRoot | Split-Path | Join-Path -ChildPath "Assets"
 
 if (-not (Test-Path $assetsPath)) {
     $null = New-Item -ItemType Directory -Force $assetsPath 
 }
-
-"Debugging Build Problems with Logo, Part 2" | Out-Host
 
 $innerCircles = @(
     $xPercent = 48..52
@@ -25,7 +21,11 @@ $innerCircles = @(
     }
 )
 
-"Debugging Build Problems with Logo, Part 3" | Out-Host
+$fontSettings = [Ordered]@{
+    TextAnchor        = 'middle'
+    AlignmentBaseline = 'middle'
+    Style             = "font-family: 'Abel';"        
+}
 
 svg -ViewBox 400,400 @(
     svg.defs @(
@@ -37,8 +37,5 @@ svg -ViewBox 400,400 @(
     $innerCircles
     # svg.text -FontSize 28 -Content 'bits' -X 50% -Y 55% @fontSettings -Class foreground-fill -Fill '#4488ff'
 ) -OutputPath (Join-Path $assetsPath "Flexibits.svg")
-
-
-"Debugging Build Problems with Logo, Part 4" | Out-Host
 
 
